@@ -91,9 +91,6 @@
 
 						let totalDis = response.features[0].properties.totalDistance;
 						let totalTime = response.features[0].properties.totalTime;
-						// 1. 저 총거리랑 시간 변환 -> 우리가 아는 ex) 시분초/ km  등 단위로 
-						// 2. 여기서 html에 추가하는거 잇음 하면됨ㅅㄱ 이거  -> 할수잇어? 검색해 js에서도 html 위치잡아서 추가되게끔할수있ㅇ음 ->지도밑에 일단보이게끔 하면되겟지?
-						// 머해야할지 알겟지? 저 값들을 html에 보여주면되는거아닌가요 후...
 
 						var hour = parseInt(totalTime/3600);
 						var min = parseInt((totalTime%3600)/60);
